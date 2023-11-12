@@ -33,3 +33,4 @@ hotel_summary <-
   group_by(hotel) %>% 
   summarize(average_lead_time = mean(lead_time), min_lead_time = min(lead_time), max_lead_time = max(lead_time))
 View(hotel_summary)
+ 
