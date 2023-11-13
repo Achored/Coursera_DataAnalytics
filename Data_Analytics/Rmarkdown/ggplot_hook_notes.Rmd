@@ -1,0 +1,27 @@
+---
+title: "R Notebook"
+Author: charlesjb
+output:
+  html_document:
+    df_print: paged
+---
+
+## Setting up my environment
+Notes: setting up my R environment by loading the 'tidyverse' and 
+'palmerpenguins' packages. 
+
+```{r loading packages}
+ library(tidyverse)
+ library(ggplot2)
+ library(palmerpenguins)
+ data(penguins)
+ View(penguins)
+```
+
+# Visualization
+
+```{r}
+ggplot(data = penguins) +
+  geom_point(mapping = aes (x = flipper_length_mm, y = body_mass_g))
+```
+
